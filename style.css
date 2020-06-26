@@ -31,9 +31,10 @@
     }
     
     fieldset {
-        margin-top: 9px;
+        margin: 9px auto;
         border-radius: 4px;
         border: 2px dotted #000;
+        width: 95%;
     }
     
     legend {
