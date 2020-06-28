@@ -5,197 +5,254 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Web Practice</title>
+    <link rel="stylesheet" href="highlight.css">
+    <title>Document</title>
 </head>
 <nav>
-    <a href="index.html"> Home</a>
+    <dl>
+        <dd>
+            <a href="index.html">Home</a>
+        </dd>
+    </dl>
 </nav>
-<div class="container">
-    <fieldset>
-        <legend id="Text">
-            Text
-        </legend>
-        <fieldset>
-            <legend id="html">
-                Html
-            </legend>
-            <p>H<sub>2</sub>O is The base of life !
-                <span class="code-used-text"> &lt;sub&gt; tag</span>
-            </p>
-            <p>Today is 25<sup>th</sup> of Juin 2020
-                <span class="code-used-text"> &lt;sup&gt; tag</span>
-            </p>
-            <p> This is a <strike>strike </strike><span class="code-used-text"> &lt;strike&gt; or &lt;del&gt; tag</span>
-            </p>
-            <p>This is an <u>underlined </u>text <span class="code-used-text"> &lt;u&gt; or &lt;ins&gt; tag</span>
-            </p>
-            <p> This is a <strong> big</strong> text <span class="code-used-text">&lt;strang&gt; or &lt;big&gt; tag</span>
-            </p>
-            <p> This is an <em> emphasize </em> text <span class="code-used-text">&lt;em&gt; tag</span>
-            </p>
-            <p> This is a <mark> marked</mark> text <span class="code-used-text">&lt;mark&gt; tag</span>
-            </p>
-            <p>
-                This is an <abbr title="abbreviation">abbr</abbr>
-                <span class="code-used-text">&lt;abbr&gt; tag</span>
-            </p>
-            <p>
-                <bdo dir="rtl"> This text will be from  right to left </bdo>
-                <span class="code-used-text">&lt;bdo dir="rtl"&gt; tag</span>
-            </p>
-            <p>
-                <bdo dir="ltr"> This text will be from  right to left </bdo>
-                <span class="code-used-text">&lt;bdo dir="ltr" &gt; tag</span>
-            </p>
-            <p>
-                <span class="code-used-text">&lt;blockquote&gt; tag</span>
-                <blockquote> This a blockquote</blockquote>
-            </p>
-            <p>
-                <q> This is a quote</q>
-                <span class="code-used-text">&lt;q&gt; tag</span>
-            </p>
-            <p> Source Code :
-                <code>int main{ &ThinSpace;
-                    printf("Hello World");
-                    &ThinSpace;
-                    return0;
-                }
-                </code>
-                <span class="code-used-text">&lt;code&gt; tag</span>
-            </p>
-            <p>
-                Result produced by the program is <samp>Hello World!</samp>
-                <span class="code-used-text">&lt;amp&gt; tag</span>
-            </p>
-            <p>My adress is <span class="code-used-text">&lt;adress&gt; tag</span><address>DAKHLA STREET , ADARIR , MOROCCO</address>
-            </p>
-        </fieldset>
-        <fieldset>
-            <legend id="css">
-                Css
-            </legend>
-            <p id="red">
-                This is a red text <span class="code-used-text"> color: red;</span>
-            </p>
-            <p id="rtl">
-                <span class="code-used-text">direction: rtl;</span> The direction of this text is from left to right
+<fieldset>
+    <legend>
+        Text and Font
+    </legend>
+    <p id="font-family">
+        This text is rendered in Verdana
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> font-family: </span> <span class="value">verdana;</span>
+    </div>
+    <p id="italic-style">
+        This text will be rendered in italic style
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> font-style: </span> <span class="value">italic;</span>
+    </div>
+    <p id="small-caps">
+        This text will be rendered as small caps
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> font-variant: </span> <span class="value">small-caps;</span>
+    </div>
+    <p id="font-bold">
+        This font is bold.
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> font-weight: </span> <span class="value">bold;</span>
+    </div>
+    <p id="font-bolder">
+        This font is bolder.
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> font-weight: </span> <span class="value">bolder;</span>
+    </div>
+    <p id="font-900">
+        This font is 900 weight.
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> font-weight: </span> <span class="value">900;</span>
+    </div>
+    <p id="font-25px">
+        This font size is 25 pixels
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> font-size: </span> <span class="value">25px;</span>
+    </div>
+    <p id="font-small">
+        This font size is small
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> font-size: </span> <span class="value">small;</span>
+    </div>
+    <p id="font-large">
+        This font size is large
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> font-size: </span> <span class="value">large;</span>
+    </div>
+    <p id="text-color">
+        This text will be written in red.
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> color: </span> <span class="value">#f00;</span>
+    </div>
+    <p id="text-direction">
+        This text will be renedered from right to left
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property">  direction: </span> <span class="value">rtl;</span>
+    </div>
+    <p id="letter-space">
+        This text is having space between letters.
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> letter-spacing:  </span> <span class="value">3px;</span>
+    </div>
+    <p id="words-space">
+        This text is having space between words.
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property">  word-spacing: </span> <span class="value"> 6px;</span>
+    </div>
+    <p id="text-indent">
+        This text will have first line indented by 1cm
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> text-indent: </span> <span class="value">1cm;</span>
+    </div>
+    <p id="text-right">
+        This will be right aligned.
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> text-align: </span> <span class="value">right;</span>
+    </div>
+    <p id="text-center">
+        This will be center aligned.
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> text-align: </span> <span class="value">1px 2px 3px blue;</span>
+    </div>
+    <p id="text-left">
+        This will be left aligned.
 
-            </p>
-            <p id="ltr">
-                The direction of this text is from right to left
-                <span class="code-used-text">direction: ltr;</span>
-            </p>
-            <p>
-                <span id="letter-space">This text is having space between letters.</span>
-                <span class="code-used-text"> letter-spacing: 5px;</span>
-            </p>
-            <p>
-                <span id="word-space">This text is having space between words.
-                </span>
-                <span class="code-used-text"> word-spacing: 8px;</span>
-            </p>
-            <p>
-                <span id="indents">
-                    This text will have first line indented by 2cm
-and this line will remain at its actual position .
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> text-align: </span> <span class="value">left;</span>
+    </div>
+    <p id="underline">
+        This will be underlined
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> text-decoration: </span> <span class="value">underline;</span>
+    </div>
+    <p id="line-through">
+        This will be striked through.
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> text-decoration: </span> <span class="value">overline;</span>
+    </div>
+    <p id="overline">
+        This will have an over line.
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> text-decoration: </span> <span class="value">line-through;</span>
+    </div>
+    <p id="cap">
+        This will be capitalized
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> text-transform: </span> <span class="value">capitalize;</span>
+    </div>
+    <p id="upcase">
+        This will be in uppercase
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> text-transform: </span> <span class="value">uppercase;</span>
+    </div>
+    <p id="lowcase">
+        THIS WILL BE LOWERCASE
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> text-transform: </span> <span class="value">lowercase;</span>
+    </div>
+    <p id="text-shadow">
+        This text will have a blue shadow.
+    </p>
+    <div class="source">
+        <span class="check">&lt;&gt;</span>
+        <span class="code">
+            <span class="property"> text-shadow: </span> <span class="value">1px 2px 3px blue;</span>
+    </div>
 
-                </span>
-                <span class="code-used-text"> text-indent: 2cm;</span>
-            </p>
-            <p id="right-text">
-                This will be right aligned.
-                <span class="code-used-text"> text-align: right;</span>
-            </p>
-            <p id="center-text">
-                This will be center aligned.
-                <span class="code-used-text"> text-align: center;</span>
-            </p>
-            <p id="left-text">
-                This will be left aligned.
-                <span class="code-used-text"> text-align: left;</span>
-            </p>
-            <p>
-                <span id="underline">This will be underlined</span>
-                <span class="code-used-text"> text-decoration: underline;</span>
-            </p>
-            <p>
-                <span id="linethrough"> This will be striked through.</span>
-                <span class="code-used-text"> text-decoration: linethrough;</span>
-            </p>
-            <p>
-                <span id="overline"> This will have an over line.</span>
-                <span class="code-used-text"> text-decoration: overlin;</span>
-            </p>
-            <p>
-                <span id="cap">This will be capitalized
-                </span>
-                <span class="code-used-text">text-transform: capitalize;</span>
-            </p>
-            <p>
-                <span id="upcase">This will be in uppercase</span>
-                <span class="code-used-text"> text-transform: upperrcase;</span>
-            </p>
-            <p>
-                <span id="lowcase">THIS WILL BE LOWCASE</span>
-                <span class="code-used-text"> text-transform: lowercase;</span>
-            </p>
-            <p class="line-break">
-                <span id="line-break">
-This text has a line break  and the white-space make auto line break .
-                </span>
-                <span class="code-used-text"> white-space: pre;</span>
-            </p>
-        </fieldset>
-    </fieldset>
+    <p id="">
 
-    <fieldset>
-        <legend id="Font">
-            Font
-        </legend>
-    </fieldset>
-    <fieldset>
-        <legend id="Colors">
-            Colors
-        </legend>
-    </fieldset>
-    <fieldset>
-        <legend id="Iamges">
-            Iamges
-        </legend>
-    </fieldset>
-    <fieldset>
-        <legend id="Tables">
-            Tables
-        </legend>
-    </fieldset>
-    <fieldset>
-        <legend id="Lists">
-            Lists
-        </legend>
-    </fieldset>
-    <fieldset>
-        <legend id="Links">
-            Links
-        </legend>
-    </fieldset>
-    <fieldset>
-        <legend id="Background">
-            Background
-        </legend>
-    </fieldset>
-    <fieldset>
-        <legend id="Tables">
-            Tables
-        </legend>
-    </fieldset>
+    </p>
+    <p id="">
 
-</div>
+    </p>
+    <p id="">
+
+    </p>
+    <p id="">
+
+    </p>
+    <p id="">
+
+    </p>
+    <p id="">
+
+    </p>
+    <p id="">
+
+    </p>
+    <p id="">
+
+    </p>
+    <p id="">
+
+    </p>
+    <p id="">
+
+    </p>
+    <p id="">
+
+    </p>
+</fieldset>
 
 <body>
     <footer>
-        <p>All right reserved &copy; 2020</p>
+        All right reseved &copy; 2020
     </footer>
+    <script src="hightlight.js"></script>
 </body>
 
 </html>
