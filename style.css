@@ -17,7 +17,8 @@
     }
     
     fieldset {
-        margin: 2px 1%;
+        margin: 5px 2%;
+        padding: 4px;
         border: 1px solid #000;
     }
     
@@ -44,7 +45,7 @@
     }
     
     p {
-        margin: 5px 2px 5px 5px;
+        margin: 6px 2px 6px 5px;
         padding: 8px;
         background-color: #eee;
         display: inline-block;
@@ -52,20 +53,19 @@
     
     .source {
         display: inline;
-        margin: 5px 6px;
+        margin: 6px 3px;
     }
     
     .source .code {
         background-color: rgb(27, 26, 26);
         padding: 4px 7px;
         margin: 5px 5px;
-        display: none;
-        transition: .6s ease;
         white-space: nowrap;
+        display: none;
     }
     
     .source:hover .code {
-        display: inline;
+        display: inline-block;
     }
     
     .property {
@@ -77,7 +77,7 @@
     }
     
     .value {
-        color: orange;
+        color: rgb(255, 115, 0);
     }
     
     #italic-style {
@@ -177,4 +177,104 @@
         cursor: pointer;
         font-weight: bolder;
         font-size: 17px;
+    }
+    
+    #img-simple,
+    #img-border,
+    #img-opacity {
+        width: 90%;
+        margin: 5px;
+    }
+    
+    #img-border {
+        border: 2px solid #f00;
+    }
+    
+    #img-opacity {
+        opacity: 50%;
+    }
+    
+    h2 {
+        background-color: aquamarine;
+        padding: 5px;
+        border: 1px solid green;
+        border-radius: 5px;
+        position: relative;
+    }
+    
+    .box {
+        width: 40%;
+        display: inline-block;
+        margin: 5px;
+    }
+    
+    #color-link {
+        color: green;
+    }
+    
+    #link-hover:hover {
+        color: red;
+    }
+    
+    #link-click:active {
+        color: pink;
+    }
+    
+    #slid-border {
+        border: 2px solid black;
+    }
+    
+    #dotted-border {
+        border: 2px dotted purple;
+    }
+    
+    .element {
+        color: rgb(255, 196, 0);
+    }
+    
+    #double-border {
+        border: 8px double orange;
+    }
+    
+    #margin-right,
+    #margin-left,
+    #margin-top,
+    #margin-bottom {
+        background-color: rebeccapurple;
+        color: #fff;
+        padding: 3px;
+    }
+    
+    #margin-right {
+        margin-right: 15px;
+    }
+    
+    #margin-left {
+        margin-left: 15px;
+    }
+    
+    #margin-top {
+        display: inline-block;
+        margin-top: 15px;
+    }
+    
+    .margin-top {
+        height: 30px;
+    }
+    
+    #margin-top {
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+    
+    .margin-bottom {
+        height: 30px;
+    }
+    
+    #pad {
+        padding: 15px;
+        color: #fff;
+        display: inline-block;
+        background-color: rebeccapurple;
+        margin: 5px;
     }
