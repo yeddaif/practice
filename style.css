@@ -77,7 +77,7 @@
     }
     
     .value {
-        color: rgb(255, 115, 0);
+        color: orange;
     }
     
     #italic-style {
@@ -277,4 +277,101 @@
         display: inline-block;
         background-color: rebeccapurple;
         margin: 5px;
+    }
+    
+    #back-green {
+        background-color: #0f0;
+    }
+    
+    #back-img {
+        background-image: url(images/background.jpg);
+        color: #fff;
+    }
+    
+    #repeat-img,
+    #repeat-x-img,
+    #repeat-y-img,
+    #once-img,
+    #position-img,
+    #position-img-d,
+    #scroll-img,
+    #fixed-img {
+        background-image: url(images/morocco.png);
+        font-weight: bold;
+        font-size: 19px;
+        text-shadow: 2px 2px 2px #fff, -1px -2px 2px #fff;
+        height: 40px;
+    }
+    
+    #repeat-img {
+        background-repeat: repeat;
+    }
+    
+    #repeat-x-img {
+        background-repeat: repeat-x;
+    }
+    
+    #repeat-y-img {
+        background-repeat: repeat-y;
+    }
+    
+    #once-img {
+        background-repeat: no-repeat;
+    }
+    
+    #position-img {
+        font-size: 19px;
+        background-repeat: no-repeat;
+        background-position: 100px;
+    }
+    
+    #position-img-d {
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    #fixed-img {
+        background-attachment: fixed;
+    }
+    
+    #scroll-img {
+        background-attachment: scroll;
+    }
+    
+    #disc {
+        list-style-type: disc;
+    }
+    
+    ol,
+    ul {
+        margin: 2px 5px;
+        padding: 9px;
+        border: 2px solid #000;
+        list-style-position: inside;
+        width: 28%;
+        border-radius: 9px;
+        font-weight: bold;
+        font-size: 18px;
+        display: inline-block;
+    }
+    
+    #circle {
+        list-style-type: circle;
+    }
+    
+    #square {
+        list-style-type: square;
+    }
+    
+    #alpha {
+        list-style-type: lower-alpha;
+    }
+    
+    #rom {
+        list-style-type: lower-roman;
+    }
+    
+    #out-list {
+        list-style-position: outside;
+        margin-left: 9px;
     }
